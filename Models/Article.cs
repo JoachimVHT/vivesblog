@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace VivesBlog.Models
 {
-    public class ArticleResult
+    public class Article
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -15,5 +15,6 @@ namespace VivesBlog.Models
         public string AuthorFirstName { get; set; }
         public string AuthorLastName { get; set; }
         public DateTime CreatedDate { get; set; }
+
     }
 }

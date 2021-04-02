@@ -8,7 +8,6 @@ C:\Users\jvanh\source\repos\VivesBlog\bin\Debug\netcoreapp3.1\VivesBlog.dll
 C:\Users\jvanh\source\repos\VivesBlog\bin\Debug\netcoreapp3.1\VivesBlog.pdb
 C:\Users\jvanh\source\repos\VivesBlog\bin\Debug\netcoreapp3.1\VivesBlog.Views.dll
 C:\Users\jvanh\source\repos\VivesBlog\bin\Debug\netcoreapp3.1\VivesBlog.Views.pdb
-C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\VivesBlog.csprojAssemblyReference.cache
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\VivesBlog.AssemblyInfoInputs.cache
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\VivesBlog.AssemblyInfo.cs
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\VivesBlog.csproj.CoreCompileInputs.cache
@@ -36,3 +35,6 @@ C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\VivesBlog.dll
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\VivesBlog.pdb
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\VivesBlog.genruntimeconfig.cache
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\VivesBlog.csproj.CopyComplete
+C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\Blog\_ArticlePartial.cshtml.g.cs
+C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ArticleCardPartial.cshtml.g.cs
+C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\Home\Read.cshtml.g.cs

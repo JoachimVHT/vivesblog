@@ -1,0 +1,22 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using VivesBlog.Models
+@model VivesBlog.Models.Article
+
+<div class="card text-left">
+    <div class="card-header">
+        <h5 class="card-title">@Model.Title</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text text-justify">@Model.Description</p>
+        <a asp-action="Read" asp-route-id="@Model.Id" class="btn btn-primary">Read More</a>
+    </div>
+    <div class="card-footer text-muted">
+        @Model.AuthorFirstName on @Model.CreatedDate.ToString("dd MMMM yyyy HH:mm")
+    </div>
+</div>

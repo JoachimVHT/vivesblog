@@ -1,0 +1,13 @@
+﻿@model VivesBlog.Models.Article
+
+<div class="card text-left">
+    <div class="card-header">
+        <h5 class="card-title">@Model.Title</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text text-justify">@Model.Content</p>
+    </div>
+    <div class="card-footer text-muted">
+        @Model.AuthorFirstName on @Model.CreatedDate.ToString("dd MMMM yyyy HH:mm")
+    </div>
+</div>

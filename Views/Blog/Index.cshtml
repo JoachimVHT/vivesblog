@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IList<Article>
+@{
     ViewData["Title"] = "Manage Blogs";
 }
 <h1>Manage Blogs</h1>
@@ -9,20 +10,13 @@
             <td>Title</td>
             <td>Author</td>
             <td>Created</td>
+            <td>Content</td>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>1</td>
-            <td>Het eerste artikel</td>
-            <td>Bavo Ketels</td>
-            <td>28/09/2020 15:59</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Het tweede artikel</td>
-            <td>Bavo Ketels</td>
-            <td>28/09/2020 16:11</td>
-        </tr>
+       @foreach(var article in Model)
+            {
+                <partial name="_ArticlePartial" model="article" />
+            }
     </tbody>
 </table>

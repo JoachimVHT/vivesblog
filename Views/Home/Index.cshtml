@@ -1,8 +1,22 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IList<Article>
+@{
+    ViewData["Title"] = "Manage Blogs Home cocntrol";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Manage Blogs</h1>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Author</td>
+            <td>Created</td>
+            <td>Content</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var article in Model)
+        {
+            <partial name="_ArticleCardPartial" model="article" />
+        }
+    </tbody>
+</table>
