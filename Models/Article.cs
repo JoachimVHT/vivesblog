@@ -12,8 +12,7 @@ namespace VivesBlog.Models
         public string Description { get; set; }
         public string Content { get; set; }
         public int AuthorId { get; set; }
-        public string AuthorFirstName { get; set; }
-        public string AuthorLastName { get; set; }
+        public Person Author { get; set; }
         public DateTime CreatedDate { get; set; }
 
     }

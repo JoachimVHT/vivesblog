@@ -17,6 +17,6 @@
         <a asp-action="Read" asp-route-id="@Model.Id" class="btn btn-primary">Read More</a>
     </div>
     <div class="card-footer text-muted">
-        @Model.AuthorFirstName on @Model.CreatedDate.ToString("dd MMMM yyyy HH:mm")
+        @Model.Author.FirstName on @Model.CreatedDate.ToString("dd MMMM yyyy HH:mm")
     </div>
 </div>

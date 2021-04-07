@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using VivesBlog.Core;
 using VivesBlog.Models;
 
 namespace VivesBlog.Controllers
@@ -13,15 +14,17 @@ namespace VivesBlog.Controllers
     {
 
         private readonly ILogger<HomeController> _logger;
+        private readonly IDatabase _database;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IDatabase database)
         {
             _logger = logger;
+            _database = database;
         }
 
         public IActionResult Index()
         {
-            var articles = getArticleLijst();
+            var articles = _database.Articles;
             return View(articles);
         }
 
@@ -36,18 +39,10 @@ namespace VivesBlog.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public List<Article> getArticleLijst()
-        {
-            return new List<Article>
-            {
-                new Article{Id=1, AuthorFirstName="joachim", AuthorId=1, AuthorLastName="sanctorum", Content="blaabl blablabl ablabl", Description="blabla", Title="eerste post"},
-                new Article{Id=2, AuthorFirstName="joachim", AuthorId=1, AuthorLastName="sanctorum", Content="blaabl blablabl ablabl", Description="blabla", Title="tweede post"},
-                new Article{Id=2, AuthorFirstName="joachim", AuthorId=1, AuthorLastName="sanctorum", Content="blaabl blablabl ablabl", Description="blabla", Title="derde post"}
-            };
-        }
+        
         public IActionResult Read(int id)
         {
-            var articles = getArticleLijst();
+            var articles = _database.Articles;
             var article = articles.SingleOrDefault(a => a.Id == id);
             if (article == null)
                 return RedirectToAction("Index");
