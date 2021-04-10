@@ -27,4 +27,8 @@
     <td>
         @Model.CreatedDate
     </td>
+    <td>
+        <a asp-controller="Blog" asp-action="Edit" asp-route-Id="@Model.Id" class="btn-info">bewerk</a>
+        <a asp-controller="Blog" asp-action="Delete" asp-route-Id="@Model.Id" class="btn-danger">verwijderen</a>
+    </td>
 </tr>

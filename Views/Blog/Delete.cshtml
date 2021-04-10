@@ -1,0 +1,9 @@
+﻿@model VivesBlog.Models.Article
+
+<h1>Are you sure?</h1>
+<p>Are you sure you want to delete @Model.Title from @Model.Author.FirstName @Model.Author.LastName?</p>
+
+<form method="post">
+    <a class="btn btn-info" asp-action="Index">Nee</a>
+    <input type="submit" class="btn btn-success" value="Ja" />
+</form>

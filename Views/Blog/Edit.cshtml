@@ -1,0 +1,9 @@
+﻿@model VivesBlog.Models.ViewModels.ArticlePerson
+
+<form method="post">
+    <input type="hidden" asp-for="Article.Id" />
+
+    <partial name="CreateEditPartial" model="Model" />
+
+    <button type="submit" class="btn btn-primary">Bewerken</button>
+</form>
