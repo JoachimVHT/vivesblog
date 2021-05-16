@@ -13,7 +13,7 @@ namespace VivesBlog.Controllers
     {
         private readonly IDatabase _database;
 
-       public BlogController(IDatabase database)
+        public BlogController(IDatabase database)
         {
             _database = database;
         }
@@ -24,15 +24,15 @@ namespace VivesBlog.Controllers
         }
 
         [HttpGet]
-       public IActionResult Create()
+        public IActionResult Create()
         {
             var authors = _database.People;
 
-            var articlePerson = new ArticlePerson
+            var articleModel = new ArticlePerson
             {
                 Authors = authors
             };
-            return View(articlePerson);
+            return View(articleModel);
         }
 
         [HttpPost]
@@ -145,6 +145,5 @@ namespace VivesBlog.Controllers
                 return 1;
             }
         }
-
     }
 }

@@ -116,8 +116,9 @@ C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\People
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\People\Create.cshtml.g.cs
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\People\Delete.cshtml.g.cs
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\People\_PersonPartial.cshtml.g.cs
-C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\VivesBlog.csprojAssemblyReference.cache
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Create.cshtml.g.cs
-C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\Blog\_CreateEditPartial.cshtml.g.cs
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Delete.cshtml.g.cs
 C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Edit.cshtml.g.cs
+C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\Blog\BlogPartial.cshtml.g.cs
+C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\VivesBlog.csprojAssemblyReference.cache
+C:\Users\jvanh\source\repos\VivesBlog\obj\Debug\netcoreapp3.1\Razor\Views\Blog\CreateEditPartial.cshtml.g.cs
